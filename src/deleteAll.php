@@ -6,10 +6,8 @@ $mysqli = new mysqli("oniddb.cws.oregonstate.edu", "solomreb-db", $myPassword,"s
 if (!$mysqli || $mysqli->connect_errno){
     echo "Connection error " . $mysqli->connect_errno . " " . $mysqli->connect_error;
     }
-    
-$row = $_GET["nameid"];
-echo "deleting row " . $row . "\n";
-if (!($stmt = mysqli_query($mysqli, "DELETE FROM videos WHERE id='$row'"))) {
+
+if (!($stmt = mysqli_query($mysqli, "DELETE FROM videos WHERE 1"))) {
 	echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
 }
 
