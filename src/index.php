@@ -24,12 +24,12 @@ if (!$mysqli || $mysqli->connect_errno){
 
 function displayVideos($mysqli, $query){
 	echo "<br><table>
-	    <col width='45%'> <col width='25%'> <col width='10%'> <col width='10%'> <col width='10%'>
+	    <col width='40%'> <col width='20%'> <col width='10%'> <col width='10%'> <col width='10%'><col width='10%'>
   		<tr><th>Movie</th>
   		<th>Category</th>
   		<th>Length</th>
   		<th>Rental Status</th>
-  		<th></th></tr>";
+  		<th></th><th></th></tr>";
 
 	if (!($stmt = mysqli_query($mysqli, $query))) {
 		echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
@@ -42,6 +42,12 @@ function displayVideos($mysqli, $query){
 		echo "<td>" . $row['category'] . "</td>";
 		echo "<td>" . $row['length'] . "</td>";
 		echo "<td>" . $row['rented'] . "</td>";
+		
+		echo "<td><form method=\"GET\" action=\"checkin.php\">";
+		echo "<input type=\"hidden\" name=\"nameid\" value=\"".$row['id']."\">";
+		echo "<input type=\"submit\" value=\"Check In/Out\">";
+		echo "</form> </td>";
+		
 		echo "<td><form method=\"GET\" action=\"delete.php\">";
 		echo "<input type=\"hidden\" name=\"nameid\" value=\"".$row['id']."\">";
 		echo "<input type=\"submit\" value=\"delete\">";
