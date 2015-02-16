@@ -1,0 +1,24 @@
+Becky Solomon
+Work Log
+
+
+
+Start: Sun, 15 Feb 2015 12:03:17 -0800 
+End: Sun, 15 Feb 2015 15:58:52 -0800 
+Tasks: add, delete, delete all, and filter work; assignment complete
+
+Start: Fri, 13 Feb 2015 10:01:59 -0800 
+End: Fri, 13 Feb 2015 12:06:51 -0800 
+Tasks: delete buttons work 
+
+Start: Thu, 12 Feb 2015 20:13:48 -0800 
+End: Thu, 12 Feb 2015 22:45:02 -0800 
+Tasks: adds movies and displays work
+
+Start: Thu, 12 Feb 2015 01:16:28 -0800 
+End: Thu, 12 Feb 2015 02:16:28 -0800 
+Tasks: test database 'videos' working 
+
+Start: Wed, 11 Feb 2015 22:19:25 -0800 
+End: Wed, 11 Feb 2015 22:19:25 -0800 
+Tasks: added empty files 
