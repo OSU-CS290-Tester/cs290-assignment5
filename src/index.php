@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>CS 340 PHP-MySQL Assignment</title>
+	<title>CS 290 PHP-MySQL Assignment</title>
 	<style>
 		table, th, td {
 	    	border: 1px solid black;
